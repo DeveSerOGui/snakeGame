@@ -11,5 +11,9 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        SnakeGame snakeGame = new SnakeGame(tamanhoLargura, tamanhoAltura);
+        frame.add(snakeGame);
+        frame.pack();
     }
 }
